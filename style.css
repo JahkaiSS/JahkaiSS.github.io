@@ -4,3 +4,16 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.btns{
+    padding: 15px;
+    border-radius: 50px;
+    width: 50%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.btns:hover{
+    background-color: white;
+    transition: 200ms;
+}
