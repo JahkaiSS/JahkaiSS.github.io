@@ -1,5 +1,4 @@
 body {
-    background-color: white;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -16,4 +15,17 @@ body {
 .btns:hover{
     background-color: white;
     transition: 200ms;
+}
+
+.game_box {
+    border: 1px solid black;
+    height: 500px;
+}
+
+.game_box .player {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 450px;
 }
