@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav-item{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+#nav-home{
+    background-color: lightblue;
+}
+#nav-about{
+    background-color: lightskyblue;
+}
+#nav-contact{
+    background-color: lightcyan;
+}
+#nav-test{
+    background-color: salmon;
+}
+
+#nav-home:hover, #nav-about:hover, #nav-contact:hover, #nav-test:hover{
+    background-color: white;
+    transition: 500ms;
+}
+
+.headings{
+    font-size: 50px;
+}
+
+.heading-pizza h1{
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    border: 1px outset black;
+    background-color: aliceblue;
+}
+
+.heading-pizza h2, .heading-pizza li{
+    border: solid 1px black;
+    text-align: center;
+}
+
+.main-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-container ul li {
+    list-style: none;
+}
+
+.main-container-item{
+    border: solid 1px black;
+    text-align: center;
+    padding: 50px;
+}
+
+#main-container-item1:hover{
+    background-color: lightblue;
+    transition: 500ms;
+}
+#main-container-item2:hover{
+    background-color: lightcyan;
+    transition: 500ms;
+}
+#main-container-item3:hover{
+    background-color: salmon;
+    color: white;
+    transition: 500ms;
+}
+
+.pizza-pic{
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .main-container{
+        display: block;
+    }
+    .nav{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
